@@ -16,14 +16,6 @@ from keras import callbacks as cb
 import numpy as np
 import matplotlib
 from keras.layers.normalization import BatchNormalization
-#detect display
-import os
-havedisplay = "DISPLAY" in os.environ
-#if we have a display use a plotting backend
-if havedisplay:
-    matplotlib.use('TkAgg')
-else:
-    matplotlib.use('Agg')
 
 import CostFunctions as cf
 import Monitoring as mn
